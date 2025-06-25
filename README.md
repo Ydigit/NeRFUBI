@@ -2,6 +2,20 @@
 
 This installation guide is part of the **NERFUBI** project (_Neural Radiance Fields for UAV-Based Infrastructure Mapping at UBI_), conducted at the University of Beira Interior in 2025. The project aims to apply Neural Radiance Fields (NeRFs) to reconstruct and analyze outdoor infrastructures using drone-captured imagery.
 
+## 💻 Tested Hardware
+
+This configuration has been tested and validated on the student's **personal laptop**, with the following specifications:
+
+| **Component**      | **Specification**                               |
+|--------------------|-------------------------------------------------|
+| Laptop Model       | MSI Cyborg 15 A13V                              |
+| Processor          | Intel Core i7-13620H (10 cores)                 |
+| RAM                | 32 GB DDR5                                      |
+| Graphics Card      | NVIDIA GeForce RTX 4060 Laptop GPU (8 GB)       |
+| Storage            | 1 TB NVMe SSD                                   |
+| Operating System   | Windows 11                                      |
+
+
 This setup ensures compatibility with the following key NeRF models:
 - ✅ Nerfacto
 - ✅ Instant-NGP
@@ -15,7 +29,7 @@ It is based on the integration of **Nerfstudio**, **Tiny-CUDA-NN**, and custom m
 
 - Python 3.10
 - Conda installed
-- A CUDA-enabled GPU (CUDA 11.8 compatible)
+- A CUDA-enabled GPU (CUDA 11.8 compatible, if diferent change your version)
 
 ---
 
@@ -37,7 +51,7 @@ pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 --extra-index-url https
 # 5. Install CUDA Toolkit (if not already installed)
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
-# 6. Install tiny-cuda-nn
+# 6. Install tiny-cuda-nn (this may take a while, in case of error check this [Github issue](https://github.com/nerfstudio-project/nerfstudio/issues/3600))
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 # 7. Clone and install Nerfstudio
