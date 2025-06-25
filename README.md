@@ -15,26 +15,26 @@ This configuration has been tested and validated on the student's **personal lap
 | Storage            | 1 TB NVMe SSD                                   |
 | Operating System   | Windows 11                                      |
 
-
 This setup ensures compatibility with the following key NeRF models:
-- ✅ Nerfacto
-- ✅ Instant-NGP
+- ✅ Nerfacto  
+- ✅ Instant-NGP  
 - ✅ NeRF-SH (Spherical Harmonics)
 
-It is based on the integration of **Nerfstudio**, **Tiny-CUDA-NN**, and custom modules from the NeRFtoGSandBack repository.
+It is based on the integration of **Nerfstudio**, **Tiny-CUDA-NN**, and custom modules from the [NeRFtoGSandBack](https://github.com/grasp-lyrl/NeRFtoGSandBack) repository.
 
 ---
 
 ## ✅ Requirements
 
-- Python 3.10
-- Conda installed
-- A CUDA-enabled GPU (CUDA 11.8 compatible, if diferent change your version)
+- Python 3.10  
+- Conda installed  
+- A CUDA-enabled GPU (CUDA 11.8 compatible, if different change your version accordingly)
 
 ---
 
 ## 🔧 Installation Steps
 
+```bash
 # 1. Create and activate Conda environment
 conda create -n nerfstudio_exp python=3.10 -y
 conda activate nerfstudio_exp
@@ -51,7 +51,7 @@ pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 --extra-index-url https
 # 5. Install CUDA Toolkit (if not already installed)
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
-# 6. Install tiny-cuda-nn (this may take a while, in case of error check this [Github issue](https://github.com/nerfstudio-project/nerfstudio/issues/3600))
+# 6. Install tiny-cuda-nn (this may take a while, in case of error check this issue: https://github.com/nerfstudio-project/nerfstudio/issues/3600)
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 # 7. Clone and install Nerfstudio
