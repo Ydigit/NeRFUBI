@@ -1,0 +1,22 @@
+{
+  "name": "nerf-model-comparison-site",
+  "version": "1.0.0",
+  "description": "A website for comparing three NeRF models with images, videos, and interactive mesh.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build step can be added here.'"
+  },
+  "keywords": [
+    "NeRF",
+    "3D Mapping",
+    "Comparison",
+    "Interactive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.136.0",
+    "dat.gui": "^0.7.6"
+  }
+}

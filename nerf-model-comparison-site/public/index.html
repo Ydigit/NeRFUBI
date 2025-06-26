@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeRF Model Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NeRF Model Comparison</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#meshes">Interactive Mesh</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="images">
+            <h2>Image Comparisons</h2>
+            <div class="image-gallery">
+                <img src="images/model1.png" alt="Model 1 Comparison">
+                <img src="images/model2.png" alt="Model 2 Comparison">
+                <img src="images/model3.png" alt="Model 3 Comparison">
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Video Comparisons</h2>
+            <div class="video-gallery">
+                <video controls>
+                    <source src="videos/model1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="videos/model2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="videos/model3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="meshes">
+            <h2>Interactive Mesh Comparison</h2>
+            <div id="mesh-container">
+                <!-- Interactive mesh will be rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NeRF Model Comparison Project</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
